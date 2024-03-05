@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>MoneyScript</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顧客満足度アンケート</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  </head>
+<div class="container">
+  <h2>顧客満足度アンケート</h2>
+  <form action="submit_form.php" method="post">
+    <label>
+      <input type="radio" name="satisfaction" value="1">非常に不満
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="2">不満
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="3">普通
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="4">満足
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="5">非常に満足
+    </label>
+    <label>
+      <input type="radio" name="satisfaction" value="6">期待以上！
+    </label>
+    <input type="submit" value="送信">
+  </form>
+</div>
 
-  <body>
-    <%= yield %>
-  </body>
+</body>
 </html>
