@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マネースクリプト診断</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>顧客満足度アンケート</h2>
+  <form action="submit_form.php" method="post">
+    <%= @inpiq1 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq2 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq3 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq4 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq5 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq6 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq7 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq8 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @inpiq9 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq1 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq2 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq3 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq4 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq5 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq6 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @suhaiq7 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq1 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq2 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq3 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq4 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq5 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq6 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq7 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @chiiq8 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq1 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq2 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq3 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq4 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq5 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq6 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq7 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <%= @kekaiq8 %>
+    <label>
+      <input type="radio" name=”answer” value="1">完全に反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="2">反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="3">少し反対
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="4">少し賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="5">賛成
+    </label>
+    <label>
+      <input type="radio" name=”answer” value="6">完全に賛成
+    </label>
+    <input type="submit" value="診断">
+  </form>
+</div>
+
+</body>
+</html>
