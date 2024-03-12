@@ -69,4 +69,17 @@ class ConsultsController < ActionController::Base
         @kekaiq7 = KEKAI_QUESTION_7
         @kekaiq8 = KEKAI_QUESTION_8
     end
+    def new
+        @consult_results = consult_results.new
+    end
+    def create
+        consult_results = consult_results.new(results_params)
+        consult_results.save!
+        redirect_to 'consult_results'
+    end
+
+    private
+    def results_params
+        params.require(:consult_results).permit(:name, :inpi, :suhai, :chii, :kekai)
+    end
 end

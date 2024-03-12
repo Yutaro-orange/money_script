@@ -1,0 +1,2 @@
+class ConsultResult < ApplicationRecord
+end
