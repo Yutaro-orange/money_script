@@ -72,14 +72,32 @@ class ConsultsController < ActionController::Base
     def new
         @consult_results = consult_results.new
     end
-    def create
-        consult_results = consult_results.new(results_params)
-        consult_results.save!
-        redirect_to 'consult_results'
+
+    def form
+        @inpi = 0
+        @suhai = 0
+        @chii = 0
+        @kekai = 0
+
+        if params[:inpiq1]
+            @inpi += params[:inpiq1].to_i
+        else
+            @inpi += 0
+        end
     end
+    def create
+        @consult_results = consult_results.new(results_params)
+        if @consult_results.save
+          # 保存が成功した場合の処理
+          redirect_to consult_results_path(@consult_results)
+        else
+          render :index
+        end
+    end
+
 
     private
     def results_params
-        params.require(:consult_results).permit(:name, :inpi, :suhai, :chii, :kekai)
+        params.require(:consult_results).permit(@inpi, @suhai, @chii, @kekai)
     end
 end
