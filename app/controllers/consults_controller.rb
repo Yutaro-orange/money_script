@@ -89,11 +89,14 @@ class ConsultsController < ActionController::Base
         @consult_results = consult_results.new(results_params)
         if @consult_results.save
           # 保存が成功した場合の処理
-          redirect_to consult_results_path(@consult_results)
+          redirect_to action: :show
         else
-          render :index
+          render action: :show
         end
     end
+    def show
+    end
+    
 
 
     private
